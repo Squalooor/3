@@ -1,0 +1,145 @@
+ul, span, button, body{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2576B1;
+    padding-left: 500px;
+    padding-right: 500px;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.card-1{
+    position: relative;
+    top: -525px;
+    width: 300px;
+    height: 575px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    transform: scale(0);
+}
+.card-1__title-image{
+    z-index: 2;
+}
+.card-1__title-text{
+    position: absolute;
+    top: 400px;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 600;
+}
+.card-1__description{
+    position: absolute;
+    top: 425px;
+    color: #ADA7A0;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+.card-1__new-price{
+    position: absolute;
+    top: 475px;
+    color: #62CE89;
+    font-size: 20px;
+}
+.card-1__old-price{
+    position: absolute;
+    top: 500px;
+    text-decoration: line-through;
+    color: #ADA7A0;
+    margin-bottom: 25px;
+}
+.card-1__button-buy{
+    position: absolute;
+    top: 550px;
+    width: 300px;
+    height: 50px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 600;
+    background: #2C2C2C;
+    border: none;
+}
+.fix{
+    z-index: 2;
+    position: relative;
+    top: 75px;
+    width: 250px;
+    height: 625px;
+}
+.fix:hover + .card-1{
+    display: flex;
+    transition: 0.5s cubic-bezier(.81,.2,.64,.92);
+    transform: scale(1);
+}
+.card-2{
+    position: relative;
+    top: -535px;
+    width: 300px;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    transform: scale(0);
+}
+.card-2__title-image{
+    z-index: 2;
+}
+.card-2__title-text{
+    position: absolute;
+    top: 385px;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 600;
+}
+.card-2__new-price{
+    position: absolute;
+    top: 435px;
+    color: #62CE89;
+    font-size: 20px;
+}
+.card-2__old-price{
+    position: absolute;
+    top: 460px;
+    text-decoration: line-through;
+    color: #ADA7A0;
+    margin-bottom: 25px;
+}
+.card-2__button-buy{
+    position: absolute;
+    top: 510px;
+    width: 300px;
+    height: 50px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 600;
+    background: #2C2C2C;
+    border: none;
+}
+.fix-2{
+    z-index: 2;
+    position: relative;
+    top: 60px;
+    width: 250px;
+    height: 625px;
+}
+.fix-2:hover + .card-2{
+    display: flex;
+    transition: 0.5s cubic-bezier(.81,.2,.64,.92);
+    transform: scale(1);
+}
